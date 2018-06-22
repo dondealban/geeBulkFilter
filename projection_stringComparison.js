@@ -1,3 +1,5 @@
+// This code is used to test the equivalence of two methods which retrieve projection data
+
 var collection = ee.ImageCollection('LANDSAT/LC8_SR')
 .filter(ee.Filter.eq('WRS_PATH', 147))
 .filter(ee.Filter.eq('WRS_ROW', 38))
@@ -15,6 +17,8 @@ return image.updateMask(clear);
 var trl = ee.List([[]]);
 var trl2 = ee.List([[]]);
 
+// First method, the more appropriate but limited version
+
 function transformList(col) {
     var nimg = 31;
     var colList = col.toList(nimg);
@@ -27,6 +31,8 @@ function transformList(col) {
     print(trl);
   }
   
+// Second method, string-ly improvised
+
 function transformList2(col){
    var nimg = 31;
    var colList = col.toList(nimg);
@@ -48,5 +54,7 @@ function transformList2(col){
 
 transformList(collection);
 transformList2(collection);
+
+// They seem to be equal, nice...
 
 print(trl.equals(trl2));
