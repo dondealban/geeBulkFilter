@@ -1,6 +1,8 @@
 // Corresponding Google Earth Engine Editor code to query an ImageCollection, filter it, and later export
 
-// Variables "table" and "table2" were manually imported into GEE. "table" represents the study area (plus) polygon in the WGS84 CRS. "table2" represents the study area (plus) in the UTM 43N projection.
+// Variables "table" and "table2" were manually imported into GEE via functions on the API
+// "table" represents the study area (plus) polygon in the WGS84 CRS
+// "table2" represents the study area (plus) in the UTM 43N projection
 
 // Functions to calculate hillshade
 function radians(img) {
