@@ -12,6 +12,10 @@ This project summarizes code in the Google Earth Engine API in order to bulk fil
 
 ## Guide for Ubuntu Linux OS to run `GEEBulkFilter.js`
 
+For simplicity, first navigate to a desired directory and clone this git repository onto your workspace:
+
+`$ git clone https://github.com/AtreyaSh/GEEBulkFilter.git`
+
 1. To start this process, a Google account is necessary. Next, one needs to sign up for GEE. If this is not done as yet, navigate to the following site to sign up:
 
    https://earthengine.google.com/
