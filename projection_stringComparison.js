@@ -1,5 +1,9 @@
 // This code is used to test the equivalence of two methods which retrieve projection data
 
+// Import key variables
+var table2 = ee.FeatureCollection("users/atreya/DL_PL_KN_Dissolve_UTM43N"),
+    table = ee.FeatureCollection("users/atreya/DL_PL_KN_Dissolve_WGS84");
+
 var collection = ee.ImageCollection('LANDSAT/LC8_SR')
 .filter(ee.Filter.eq('WRS_PATH', 147))
 .filter(ee.Filter.eq('WRS_ROW', 38))
