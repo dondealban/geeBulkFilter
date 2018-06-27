@@ -29,3 +29,17 @@ For simplicity, first navigate to a desired directory and clone this git reposit
 5. We now have the important variables imported. Now, copy and paste the code from the `GEEBulkFilter.js` file into the GEE code editor. With this, we are good to go. 
 
 6. Run the script and the corresponding data will be sent to your Google Drive for downloading!
+
+**What does the `GEEBulkFilter.js` script do?**
+
+1. Queries Landsat 8 Surface Reflectance Imagery for the WRS Row/Path 147/38 in the time period from 2011-01-01 to 2017-05-01.
+
+2. Chooses images with a mean cloud score of less than 10.
+
+3. Removes clouds, cloud-shadows, water and snow from the images to provide clear images for analysis.
+
+4. Removes pixels which experience significant terrain-related shadows. This is done by calculating hillshade and setting a threshold for significant shadows.
+
+5. Exports resulting images into your Google Drive.
+
+This script results in 31 Landsat 8 SR images from 2013-2017 being downloaded into Google Drive.
