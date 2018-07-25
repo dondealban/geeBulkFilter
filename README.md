@@ -8,7 +8,7 @@ This project summarizes code in the Google Earth Engine API in order to bulk fil
 
 <img src="https://user-images.githubusercontent.com/35427332/41541174-2428fc60-7312-11e8-98bb-9b05ffc24a9b.png" width="800">
 
-## Guide for Ubuntu Linux OS to run `geeBulkFilter.js`
+## Guide for Ubuntu 16.04 to run `geeBulkFilter.js`
 
 For simplicity, first navigate to a desired directory and clone this git repository onto your workspace:
 
@@ -32,7 +32,7 @@ For simplicity, first navigate to a desired directory and clone this git reposit
 
 1. Queries Landsat 8 Surface Reflectance Imagery for the WRS Row/Path 147/38 in the time period from 2011-01-01 to 2017-05-01.
 
-2. Chooses images with a mean cloud score of less than 10.
+2. Chooses images with a mean cloud score of less than or equal to 10.
 
 3. Clips the images to a desired shapefile.
 
@@ -42,4 +42,4 @@ For simplicity, first navigate to a desired directory and clone this git reposit
 
 6. Exports resulting images into your Google Drive.
 
-This script results in 31 Landsat 8 SR images from 2013-2017 being downloaded into Google Drive. These images were then manually downloaded and can be found in the `gee_ouputs` directory.
+This script results in 31 Landsat 8 SR images from 2013-2017 being downloaded into Google Drive. These images were then manually downloaded and can be found in the `/gee_ouputs` directory.
