@@ -43,3 +43,7 @@ For simplicity, first navigate to a desired directory and clone this git reposit
 6. Exports resulting images into your Google Drive.
 
 This script results in 31 Landsat 8 SR images from 2013-2017 being downloaded into Google Drive.
+
+**Results of running `geeBukFilter.js`**
+
+This script results in 31 Landsat 8 SR images from 2013-2017 being downloaded into Google Drive. These images can be found in the `gee_ouputs` directory.
