@@ -32,7 +32,7 @@ for(i in 1:length(s)){
 Manual Check and Refinements
 ============================
 
-After doing this, out images are saved in the `/Cleaned_Images` directory. Now we can visualize these images to manually check for any possible issues. The following 5 images were ascertained to be defective and not suitable for further analysis. This is due to the presence of objects such as haze, and possibly inaccurate atmospheric correction. Their corresponding file names were: `LC81470382014047_6.tif`, `LC81470382014111_7.tif`, `LC81470382015258_19.tif`, `LC81470382017023_28.tif`, `LC81470382017055_29.tif`.
+After doing this, out images are saved in the `/climg` directory. Now we can visualize these images to manually check for any possible issues. The following 5 images were ascertained to be defective and not suitable for further analysis. This is due to the presence of objects such as haze, and possibly inaccurate atmospheric correction. Their corresponding file names were: `LC81470382014047_6.tif`, `LC81470382014111_7.tif`, `LC81470382015258_19.tif`, `LC81470382017023_28.tif`, `LC81470382017055_29.tif`.
 
 ![](/img/Defective_Images.png)
 

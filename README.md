@@ -8,7 +8,7 @@ This project summarizes code in the Google Earth Engine API in order to bulk fil
 
 <img src="https://user-images.githubusercontent.com/35427332/41541174-2428fc60-7312-11e8-98bb-9b05ffc24a9b.png" width="800">
 
-## Guide for Ubuntu 16.04 to run `geeBulkFilter.js`
+## 1. Guide for Ubuntu 16.04 to run `geeBulkFilter.js`
 
 For simplicity, first navigate to a desired directory and clone this git repository onto your workspace:
 
@@ -20,9 +20,9 @@ For simplicity, first navigate to a desired directory and clone this git reposit
 
 2. After signing up for GEE, log into your account within GEE and navigate to the central code editor. Create a new repository and name it accordingly. 
 
-3. Next, we need to upload certain assets required for our analysis. Within the GEE code editor, navigate to the `Assets` tab and select `NEW` and `Table upload`. Select all the files corresponding to the generic file path `/gee_inputs/DL_PL_KN_Dissolve_WGS84` with the endings `.cpg, .dbf, .prj, .sbn, .sbx, .shp, .shp.xml, .shx `. Let this asset be named `DL_PL_KN_Dissolve_WGS84`. Import this asset into the code editor with the variable name `table`.
+3. Next, we need to upload certain assets required for our analysis. Within the GEE code editor, navigate to the `Assets` tab and select `NEW` and `Table upload`. Select all the files corresponding to the generic file path `/gee_input/DL_PL_KN_Dissolve_WGS84` with the endings `.cpg, .dbf, .prj, .sbn, .sbx, .shp, .shp.xml, .shx `. Let this asset be named `DL_PL_KN_Dissolve_WGS84`. Import this asset into the code editor with the variable name `table`.
 
-4. Select all the files corresponding to the generic file path `/gee_inputs/DL_PL_KN_Dissolve_UTM43N` with the endings `.cpg, .dbf, .prj, .sbn, .sbx, .shp, .shp.xml, .shx `. Let this asset be named `DL_PL_KN_Dissolve_UTM43N`. Import this asset into the code editor with the variable name `table2`.
+4. Select all the files corresponding to the generic file path `/gee_input/DL_PL_KN_Dissolve_UTM43N` with the endings `.cpg, .dbf, .prj, .sbn, .sbx, .shp, .shp.xml, .shx `. Let this asset be named `DL_PL_KN_Dissolve_UTM43N`. Import this asset into the code editor with the variable name `table2`.
 
 5. We now have the important variables imported. Now, copy and paste the code from the `geeBulkFilter.js` file into the GEE code editor. With this, we are good to go. 
 
@@ -43,3 +43,7 @@ For simplicity, first navigate to a desired directory and clone this git reposit
 6. Exports resulting images into your Google Drive.
 
 This script results in 31 Landsat 8 SR images from 2013-2017 being downloaded into Google Drive. These images were then manually downloaded and can be found in the `/gee_output` directory.
+
+### 2. Guide for Ubuntu 16.04 to refining resulting remote sensing data
+
+[Still under development...]
