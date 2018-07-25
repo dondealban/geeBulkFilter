@@ -16,15 +16,15 @@ library("rgdal")
 Now we have loaded necessary packages. Let's move on to the actual process of cleaning the images.
 
 ``` r
-rlist<-list.files(paste(getwd(),"/GEE_Output", sep =""), pattern="tif$", full.names = TRUE) 
+rlist<-list.files(paste(getwd(),"/gee_output", sep =""), pattern="tif$", full.names = TRUE) 
 s <- lapply(rlist, stack)
-polygonLower <- readOGR(paste(getwd(), "/GEE_Input", sep=''), "DL_PL_KN_Lower_UTM43N")
+polygonLower <- readOGR(paste(getwd(), "/gee_input", sep=''), "DL_PL_KN_Lower_UTM43N")
 
 for(i in 1:length(s)){
   image <- s[[i]]
   image[image[] == 0] <- NA
   imageMasked <- mask(image, polygonLower)
-  writeRaster(imageMasked, file.path(paste(getwd(), "/Cleaned_Images", sep = ''), 
+  writeRaster(imageMasked, file.path(paste(getwd(), "/climg", sep = ''), 
                                      names(s[[i]])[1]), format = "GTiff")
 }
 ```
@@ -42,7 +42,7 @@ Summary
 These files were excluded from further analysis and the remaining suitable images were defined by the following list of raster stacks. With the new defintion of `s`, we can now move forward with the next post-analyses.
 
 ``` r
-rlist<-list.files(paste(getwd(),"/Cleaned_Images", sep =""), pattern="tif$", full.names = TRUE)
+rlist<-list.files(paste(getwd(),"/climg", sep =""), pattern="tif$", full.names = TRUE)
 s <- lapply(rlist, stack)
 s <- s[-c(7,8,20,29,30)]
 ```
