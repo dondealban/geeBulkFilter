@@ -44,6 +44,6 @@ For simplicity, first navigate to a desired directory and clone this git reposit
 
 This script results in 31 Landsat 8 SR images from 2013-2017 being downloaded into Google Drive. These images were then manually downloaded and can be found in the `/gee_output` directory.
 
-### 2. Guide for Ubuntu 16.04 to refining resulting remote sensing data
+## 2. Guide for Ubuntu 16.04 to refining resulting remote sensing data
 
 [Still under development...]
