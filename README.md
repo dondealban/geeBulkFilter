@@ -32,7 +32,7 @@ For simplicity, first navigate to a desired directory and clone this git reposit
 
 1. Queries Landsat 8 Surface Reflectance Imagery for the WRS Row/Path 147/38 in the time period from 2011-01-01 to 2017-05-01.
 
-2. Chooses images with a mean cloud score of less than 10.
+2. Chooses images with a mean cloud score of less than or equal to 10.
 
 3. Clips the images to a desired shapefile.
 
