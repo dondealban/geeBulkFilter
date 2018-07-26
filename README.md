@@ -8,7 +8,9 @@ This project summarizes code in the Google Earth Engine API in order to bulk fil
 
 <img src="https://user-images.githubusercontent.com/35427332/41541174-2428fc60-7312-11e8-98bb-9b05ffc24a9b.png" width="800">
 
-## 1. Guide for Ubuntu 16.04 to run `geeBulkFilter.js`
+## Guide for Ubuntu 16.04
+
+## 1. Implement `geeBulkFilter.js` script in GEE
 
 For simplicity, first navigate to a desired directory and clone this git repository onto your workspace:
 
@@ -44,6 +46,6 @@ For simplicity, first navigate to a desired directory and clone this git reposit
 
 This script results in 31 Landsat 8 SR images from 2013-2017 being downloaded into Google Drive. These images were then manually downloaded and can be found in the `/gee_output` directory.
 
-## 2. Guide for Ubuntu 16.04 to refine remote sensing data
+## 2. Refine resulting remote sensing data
 
 Now that we have downloaded the resulting remote sensing data from GEE, we would need to review and refine this data. Further information on this process can be found in the `geeDataClean.md` markdown file here: https://github.com/AtreyaSh/geeBulkFilter/blob/master/geeDataClean.md
