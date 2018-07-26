@@ -25,7 +25,7 @@ for(i in 1:length(s)){
   image[image[] == 0] <- NA
   imageMasked <- mask(image, polygonLower)
   writeRaster(imageMasked, file.path(paste(getwd(), "/climg", sep = ''), 
-                                     names(s[[i]])[1]), format = "GTiff")
+                                     strsplit(names(s[[i]])[1], "[.]")[[1]][1]), format = "GTiff")
 }
 ```
 
