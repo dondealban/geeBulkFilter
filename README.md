@@ -46,4 +46,4 @@ This script results in 31 Landsat 8 SR images from 2013-2017 being downloaded in
 
 ## 2. Guide for Ubuntu 16.04 to refine remote sensing data
 
-Now that we have downloaded the resulting remote sensing data from GEE, we would need to review and refine this data. Further information on this process can be found in the `geeDataClean.md` markdown file here: https://github.com/AtreyasSh/geeBulkFilter/geeDataClean.md
+Now that we have downloaded the resulting remote sensing data from GEE, we would need to review and refine this data. Further information on this process can be found in the `geeDataClean.md` markdown file here: https://github.com/AtreyaSh/geeBulkFilter/blob/master/geeDataClean.md

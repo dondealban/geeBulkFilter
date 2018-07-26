@@ -1,4 +1,4 @@
-/cliReviewing GEE Output Data
+Reviewing GEE Output Data
 =========================
 
 Now we will navigate to the data exported by our GEE Script. We now have 31 Landsat 8 SR Images. These images have been clipped to a certain general boundary. We would like to reduce this boundary to all altitudes below 3,000 m a.m.s.l. Furthermore, we would also like to replace all 0 values in the images produced with `NA` values.
